@@ -199,7 +199,7 @@ Official Day 1 Practical Task: Draw a basic web architecture diagram.
 >Completed activities:
 
 - Studied the fundamentals of web development.
-- Learned the difference between the Internet and WWW.
+- Learned the difference between the Internet and WWW
 - Understood client-server communication.
 - Explored the role of web browsers.
 - Learned the basic HTTP request-response process.
