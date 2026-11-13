@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Student Registration Form</h1>
+        <p>Complete the form below to register as a student.</p>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+                <br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                <br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required minlength="8">
+                <br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="01XXXXXXXXX" pattern="[0-9]{11}" required>
+                <br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                <br><br>
+
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+                <br><br>
+
+                <label for="profile">Profile Picture:</label>
+                <input type="file" id="profile" name="profile" accept="image/*">
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Academic Information</legend>
+
+                <label for="institution">Institution Name:</label>
+                <input type="text" id="institution" name="institution" placeholder="Enter institution name" required>
+                <br><br>
+
+                <label for="department">Department:</label>
+                <select id="department" name="department" required>
+                    <option value="">Select Department</option>
+                    <option value="CSE">Computer Science & Engineering</option>
+                    <option value="SWE">Software Engineering</option>
+                    <option value="EEE">Electrical & Electronic Engineering</option>
+                    <option value="BBA">Business Administration</option>
+                    <option value="English">English</option>
+                </select>
+                <br><br>
+
+                <label for="semester">Current Semester:</label>
+                <select id="semester" name="semester" required>
+                    <option value="">Select Semester</option>
+                    <option value="1st">1st Semester</option>
+                    <option value="2nd">2nd Semester</option>
+                    <option value="3rd">3rd Semester</option>
+                    <option value="4th">4th Semester</option>
+                    <option value="5th">5th Semester</option>
+                    <option value="6th">6th Semester</option>
+                    <option value="7th">7th Semester</option>
+                    <option value="8th">8th Semester</option>
+                </select>
+                <br><br>
+
+                <label for="studentid">Student ID:</label>
+                <input type="text" id="studentid" name="studentid" placeholder="Enter your student ID" required>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+
+                <label for="skills">Your Skills:</label>
+                <br>
+
+                <input type="checkbox" id="html" name="skills" value="HTML">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" id="css" name="skills" value="CSS">
+                <label for="css">CSS</label>
+
+                <input type="checkbox" id="javascript" name="skills" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+
+                <input type="checkbox" id="python" name="skills" value="Python">
+                <label for="python">Python</label>
+
+                <br><br>
+
+                <label for="about">About Yourself:</label>
+                <br>
+                <textarea id="about" name="about" rows="5" cols="40" placeholder="Write something about yourself..."></textarea>
+                <br><br>
+
+                <label for="website">Personal Website:</label>
+                <input type="url" id="website" name="website" placeholder="https://example.com">
+                <br><br>
+
+                <label for="experience">Years of Experience:</label>
+                <input type="number" id="experience" name="experience" min="0" max="20" value="0">
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Terms & Conditions</legend>
+
+                <input type="checkbox" id="terms" name="terms" value="accepted" required>
+                <label for="terms">I agree to the terms and conditions.</label>
+            </fieldset>
+
+            <br>
+
+            <button type="submit">Register Now</button>
+            <button type="reset">Reset Form</button>
+
+        </form>
+    </main>
+
+    <br>
+
+    <section>
+        <h2>Available Input Types</h2>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Input Type</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>text</td>
+                    <td>Text input</td>
+                </tr>
+                <tr>
+                    <td>email</td>
+                    <td>Email address</td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td>Hidden password</td>
+                </tr>
+                <tr>
+                    <td>number</td>
+                    <td>Numeric values</td>
+                </tr>
+                <tr>
+                    <td>tel</td>
+                    <td>Telephone number</td>
+                </tr>
+                <tr>
+                    <td>date</td>
+                    <td>Date selection</td>
+                </tr>
+                <tr>
+                    <td>radio</td>
+                    <td>Single selection</td>
+                </tr>
+                <tr>
+                    <td>checkbox</td>
+                    <td>Multiple selections</td>
+                </tr>
+                <tr>
+                    <td>file</td>
+                    <td>File upload</td>
+                </tr>
+                <tr>
+                    <td>url</td>
+                    <td>Website address</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Student Registration Portal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
