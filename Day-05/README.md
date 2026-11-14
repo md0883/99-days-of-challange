@@ -150,12 +150,6 @@ Non-semantic elements do not describe the meaning of their content by themselves
 Examples:
 ·	<div>
 ·	<span>
->Comparison
-Semantic HTML	Non-Semantic HTML
-Describes the purpose of content	Does not describe the purpose
-Makes page structure clearer	Used mainly as a general container
-Helps assistive technologies understand page landmarks	Has no specific semantic meaning
-Examples: header, main, footer	Examples: div, span
 8. Why Should We Use Semantic HTML?
 Semantic HTML is important when building professional websites.
 Some of its main benefits are:
