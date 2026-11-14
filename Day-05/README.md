@@ -133,8 +133,11 @@ Common footer content includes:
     <a href="#home">Back to Top</a>
 </footer>
 >Remember: A footer can belong to the entire webpage or to an individual section or article.
-7. Difference Between Semantic and Non-Semantic HTML
+
+
+7. Difference Between Semantic and Non-Semantic HTML:
 HTML elements can be divided into two broad groups based on whether they communicate the meaning of their content.
+
 >Semantic Elements
 Semantic elements clearly describe their purpose.
 Examples:
@@ -145,11 +148,14 @@ Examples:
 ·	<footer>
 ·	<article>
 ·	<aside>
+
 >Non-Semantic Elements
 Non-semantic elements do not describe the meaning of their content by themselves.
 Examples:
 ·	<div>
 ·	<span>
+
+
 8. Why Should We Use Semantic HTML?
 Semantic HTML is important when building professional websites.
 Some of its main benefits are:
