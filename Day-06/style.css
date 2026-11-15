@@ -1,0 +1,119 @@
+
+* {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f3ed;
+    color: #303b35;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+header {
+    background-color: #203c32;
+    color: #f8f5ec;
+    text-align: center;
+}
+
+.eyebrow {
+    color: #e8b878;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: Georgia, serif;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 span {
+    color: #e8b878;
+}
+
+.tagline {
+    color: #d5dfd7;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+nav {
+    background-color: #315c4c;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main {
+    font-size: 1rem;
+}
+
+.profile-section {
+    background-color: #ffffff;
+    color: #46534b;
+    font-size: 1rem;
+}
+
+.section-label {
+    color: #bd7841;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #264b3c;
+    font-family: Georgia, serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.profile-section p {
+    line-height: 1.8;
+}
+
+.skill-list {
+    color: #315c4c;
+    font-size: 1em;
+}
+
+.highlight {
+    color: #a45d2c;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+#contact {
+    color: #46534b;
+}
+
+a {
+    color: #bd7841;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #203c32;
+    color: #f8f5ec;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+footer a {
+    color: #e8b878;
+    font-weight: bold;
+}
+
+h1, h2 {
+    line-height: 1.3;
+}
