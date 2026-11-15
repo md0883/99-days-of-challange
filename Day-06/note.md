@@ -24,7 +24,8 @@ p {
     font-size: 18px;
 }
 In this example, CSS changes the heading to blue and makes its text larger. It also changes the paragraph color and font size.
-Three Ways to Add CSS
+
+--Three Ways to Add CSS
 There are three common ways to apply CSS to HTML.
 1. Inline CSS
 Inline CSS is written directly inside an HTML element using the style attribute.
@@ -83,14 +84,7 @@ nav a {
     color: white;
 }
 Here, the style applies to anchor (a) elements inside a nav element.
->Quick Comparison
-Selector	Symbol or Format	Purpose
-Universal	*	Targets all elements.
-Element	p	Targets all elements with a particular tag.
-Class	.name	Targets elements with a specific class.
-ID	#name	Targets an element with a specific ID.
-Grouping	h1, p	Applies the same styles to multiple selectors.
-Descendant	nav a	Targets elements inside another element.
+
 Remember: Class selectors use a dot (.), while ID selectors use a hash (#).
 3. CSS Colors
 CSS colors are used to change the appearance of text, backgrounds, borders, and other elements.
@@ -169,14 +163,7 @@ vh represents a percentage of the browser's viewport height.
 .hero {
     height: 50vh;
 }
->Quick Comparison
-Unit	Meaning	Example
-px	Pixels	font-size: 16px;
-rem	Relative to the root font size	font-size: 2rem;
-em	Relative to the parent font size for font sizing	font-size: 1.5em;
-%	Percentage of a relevant reference size	width: 80%;
-vw	Viewport width	width: 50vw;
-vh	Viewport height	height: 50vh;
+
 >Remember: px is useful when you need a specific size, while relative units such as rem, em, and % can help create more flexible layouts.
 5. CSS Typography
 Typography refers to how text is displayed on a webpage. It includes the font family, size, weight, alignment, and spacing of text.
