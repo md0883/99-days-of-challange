@@ -1,0 +1,255 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #101211;
+    color: #f2f0e9;
+    font-family: 'DM Sans', sans-serif;
+    padding: 0 7%;
+}
+
+.site-header {
+    min-height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    border-bottom: 1px solid #343936;
+}
+
+.logo {
+    color: #f2f0e9;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #d7a66b;
+}
+
+.header-note {
+    color: #999f99;
+    font-size: 12px;
+}
+
+.header-link {
+    color: #e5c39b;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.header-link span {
+    margin-left: 7px;
+}
+
+.intro {
+    max-width: 760px;
+    padding: 105px 0 90px;
+}
+
+.eyebrow {
+    color: #d7a66b;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.intro .eyebrow span {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background: #d7a66b;
+}
+
+.intro h1 {
+    margin-top: 25px;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(58px, 9vw, 112px);
+    font-weight: 600;
+    letter-spacing: -5px;
+    line-height: .98;
+}
+
+.intro h1 em {
+    color: #d7a66b;
+    font-weight: 600;
+}
+
+.intro-copy {
+    max-width: 390px;
+    margin-top: 28px;
+    color: #a9aea8;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.gallery-section {
+    padding-bottom: 100px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #343936;
+}
+
+.section-heading h2 {
+    margin-top: 9px;
+    font-family: 'Playfair Display', serif;
+    font-size: 31px;
+    font-weight: 600;
+}
+
+.image-count {
+    color: #f2f0e9;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.image-count span {
+    color: #777f78;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+    gap: 38px 24px;
+    align-items: start;
+}
+
+.gallery-card {
+    min-width: 0;
+}
+
+.image-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 390px;
+    background: #242a26;
+}
+
+.card-tall .image-wrap {
+    height: 500px;
+}
+
+.card-wide .image-wrap {
+    height: 390px;
+}
+
+.image-wrap::after {
+    position: absolute;
+    content: "";
+    inset: 45% 0 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, .48));
+    pointer-events: none;
+}
+
+.image-wrap img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s ease, filter .5s ease;
+}
+
+.gallery-card:hover .image-wrap img {
+    transform: scale(1.045);
+    filter: brightness(.82);
+}
+
+.image-number,
+.image-tag {
+    position: absolute;
+    z-index: 1;
+    top: 16px;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.image-number {
+    left: 16px;
+}
+
+.image-tag {
+    right: 16px;
+    padding: 7px 10px;
+    border: 1px solid rgba(255, 255, 255, .55);
+    border-radius: 20px;
+    background: rgba(16, 18, 17, .35);
+}
+
+.card-caption {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    padding-top: 14px;
+}
+
+.card-caption h3 {
+    color: #f2f0e9;
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.card-caption p {
+    color: #858d86;
+    font-size: 10px;
+    text-align: right;
+}
+
+.gallery-card:nth-child(2) .image-wrap img {
+    object-position: center;
+}
+
+.gallery-card:nth-child(5) .image-wrap img {
+    object-position: center 55%;
+}
+
+.gallery-card:nth-child(6) .image-wrap img {
+    object-position: center 60%;
+}
+
+.site-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 25px 0 32px;
+    border-top: 1px solid #343936;
+    color: #858d86;
+    font-size: 9px;
+    letter-spacing: 1.4px;
+}
+
+.site-footer span {
+    color: #d7a66b;
+}
+
+.site-footer a {
+    color: #e5c39b;
+    font-size: 20px;
+    letter-spacing: 0;
+    text-decoration: none;
+}
